@@ -1,10 +1,9 @@
 ;; General
-;;; Files
-(setq delete-quto-save-files t) ;; delete auto-save files
-(setq make-backup-files nil) ;; don't make backup files
-
-;;; Sound
-(setq ring-bell-function 'ignore) ;; stop beeping
+;;; Stop default things
+(setq delete-quto-save-files t)
+(setq make-backup-files nil)
+(setq ring-bell-function 'ignore)
+(setq inhibit-startup-messaget t)
 
 ;;; Key-config
 (define-key global-map (kbd "C-z") 'undo)
@@ -15,3 +14,8 @@
 
 ;;; Highlight
 (global-hl-line-mode t)
+(show-paren-mode 1)
+;;;; line number
+
+;;; Language
+(prefer-coding-system 'utf-8)

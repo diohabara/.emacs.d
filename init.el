@@ -3,7 +3,8 @@
 (setq delete-quto-save-files t)
 (setq make-backup-files nil)
 (setq ring-bell-function 'ignore)
-(setq inhibit-startup-messaget t)
+(setq inhibit-startup-message t)
+(menu-bar-mode -1)
 
 ;;; Key-config
 (define-key global-map (kbd "C-z") 'undo)

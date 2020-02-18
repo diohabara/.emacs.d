@@ -7,6 +7,7 @@
 
 ;;; Key-config
 (define-key global-map (kbd "C-z") 'undo)
+(define-key global-map (kbd "C-h") 'deleta-backward-char)
 
 ;;; Indent
 (setq-default indent-tabs-mode nil)

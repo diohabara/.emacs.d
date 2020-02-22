@@ -1,0 +1,1 @@
+(require 'git-gutter-fringe+)

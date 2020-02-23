@@ -13,3 +13,4 @@
 ;;; line & column number
 (line-number-mode t)
 (column-number-mode t)
+(global-linum-mode t)

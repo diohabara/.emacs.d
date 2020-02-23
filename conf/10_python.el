@@ -1,5 +1,5 @@
 ;;; elpy
 (use-package elpy
   :ensure t
-  :int
+  :init
   (elpy-enable))

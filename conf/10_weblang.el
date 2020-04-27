@@ -30,7 +30,7 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
-(with-eval-after-load 'web-mode (sp-local-pair '(web-mode) "<" ">" :actions :rem))
+;; (with-eval-after-load 'web-mode (sp-local-pair '(web-mode) "<" ">" :actions :rem))
 
 (flycheck-add-mode 'html-tidy 'web-mode)
 (flycheck-add-mode 'javascript-eslint 'web-mode)

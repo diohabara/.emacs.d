@@ -14,3 +14,12 @@
 (line-number-mode t)
 (column-number-mode t)
 (global-linum-mode t)
+
+;;; title bar
+(setq frame-title-format "%f")
+
+;;; show space characters
+(setq-default show-trailing-whitespace t)
+(set-face-background `trailing-whitespace "#b14770")
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)

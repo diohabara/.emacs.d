@@ -8,3 +8,7 @@
 ;;; Indent
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2)
+
+;;; stop making backup files
+(setq make-backup-files nil)
+(setq auto-save-default nil)

@@ -57,6 +57,8 @@ flycheck_*.el
 
 .lsp-session-v1
 
+# my settings
 recentf
 ac-comphist.dat
+trainsient
 .lsp-session-vl

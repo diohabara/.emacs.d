@@ -18,6 +18,13 @@
 ;;; title bar
 (setq frame-title-format "%f")
 
+;;; show full path to file
+(setq-default frame-title-format "%b (%f)")
+(setq frame-title-format
+      '((:eval (if (buffer-file-name)
+                   (abbreviate-file-name (buffer-file-name))
+                 "%b"))))
+
 ;;; show space characters
 (setq-default show-trailing-whitespace t)
 (set-face-background `trailing-whitespace "#b14770")

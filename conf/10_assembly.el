@@ -1,2 +1,2 @@
-(autoload `nasm-mode "~/.emacs.d/nasm-mode.el" "" t)
+(autoload `nasm-mode "~/.emacs.d/elpa/nasm-mode-20190410.342/nasm-mode.el" "" t)
 (add-to-list `auto-mode-alist `("\\.\\(asm\\|s\\)$" . nasm-mode))

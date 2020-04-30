@@ -21,7 +21,7 @@
     ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
  '(package-selected-packages
    (quote
-    (undo-fu rustic rust-mode nasm-mode prettier-js company-tern xref-js2 js2-refactor js2-mode tide web-mode auto-complete-clang-async auto-complete-c-headers elpy zenburn-theme spacemacs-theme lsp-ui lsp-treemacs dap-mode posframe company-lsp yasnippet lsp-mode sbt-mode lsp-scala scala-mode cl-lib-highlight exec-path-from-shell tuareg wakatime-mode git-gutter-fringe+ flycheck neotree company avy-migemo swiper counsel ivy magit use-package init-loader ggtags auto-save-buffers-enhanced)))
+    (git-gutter git-gutter+ git-gutter-fringe undo-fu rustic rust-mode nasm-mode prettier-js company-tern xref-js2 js2-refactor js2-mode tide web-mode auto-complete-clang-async auto-complete-c-headers elpy zenburn-theme spacemacs-theme lsp-ui lsp-treemacs dap-mode posframe company-lsp yasnippet lsp-mode sbt-mode lsp-scala scala-mode cl-lib-highlight exec-path-from-shell tuareg wakatime-mode git-gutter-fringe+ flycheck neotree company avy-migemo swiper counsel ivy magit use-package init-loader ggtags auto-save-buffers-enhanced)))
  '(web-mode-enable-auto-quoting nil)
  '(web-mode-enable-current-column-highlight t)
  '(web-mode-enable-current-element-highlight t)

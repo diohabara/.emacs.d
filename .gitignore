@@ -60,5 +60,4 @@ flycheck_*.el
 # my settings
 recentf
 ac-comphist.dat
-trainsient
-.lsp-session-vl
+transient

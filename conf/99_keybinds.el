@@ -6,9 +6,10 @@
 (global-set-key (kbd "C-z")   'undo-fu-only-undo)
 (global-set-key (kbd "C-r") 'undo-fu-only-redo)
 
-;;; quit Emacs
+;;; stop unintentionally quitting Emacs
 (global-unset-key (kbd "C-x C-c"))
+(global-unset-key (kbd "C-x C-z"))
 (defalias 'exit 'save-buffers-kill-emacs)
 ;; set some command instead
 ;; (global-set-key (kbd "C-x C-c") 'some-command)
-
+;; (global-set-key (kbd "C-x C-z") 'some-command)

@@ -1,15 +1,24 @@
 (require 'cc-mode)
-
 (require 'auto-complete-c-headers)
-(add-hook 'c++-mode-hook '(setq ac-sources (append ac-sources '(ac-source-c-headers))))
-(add-hook 'c-mode-hook '(setq ac-sources (append ac-sources '(ac-source-c-headers))))
+(require 'google-c-style)
+(add-hook 'c++-mode-hook
+          '(setq ac-sources
+                 (append ac-sources
+                         '(ac-source-c-headers))))
+(add-hook 'c-mode-hook
+          '(setq ac-sources
+                 (append ac-sources
+                         '(ac-source-c-headers))))
 (add-hook 'c-mode-common-hook
           (lambda ()
-            (setq c-default-style "k&r")
             (setq indent-tabs-mode nil)
             (c-toggle-auto-hungry-state 1)
             (define-key c-mode-base-map "\C-m" 'newline-and-indent)
             ))
+
+;; Google C++ Style Guide
+(add-hook 'c-mode-hook 'google-set-c-style)
+(add-hook 'c++-mode-hook 'google-set-c-style)
 
 ;; (require 'auto-complete-clang-async)
 ;; (defun ac-cc-mode-setup ()

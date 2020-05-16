@@ -13,3 +13,6 @@
 ;; set some command instead
 ;; (global-set-key (kbd "C-x C-c") 'eshell)
 ;; (global-set-key (kbd "C-x C-z") 'some-command)
+
+;;; rust
+(define-key rust-mode-map (kbd "C-c C-c") 'rust-run)

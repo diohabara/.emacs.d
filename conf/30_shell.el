@@ -1,5 +1,5 @@
 ;; start eshell
-(global-set-key (kbd "C-x C-c") 'eshell)
+(global-set-key (kbd "C-x C-c") 'ansi-term)
 
 ;; eshell keybinds
 (add-hook 'eshell-mode-hook

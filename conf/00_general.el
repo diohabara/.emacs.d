@@ -12,3 +12,11 @@
 ;;; stop making backup files
 (setq make-backup-files nil)
 (setq auto-save-default nil)
+
+;;; copy
+(cond (window-system
+       (setq x-select-enable-clipboard t)
+       ))
+(require 'xclip)
+(xclip-mode 1)
+

@@ -4,6 +4,10 @@
   :init
   (elpy-enable))
 
+;;; jedi
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
+
 ;;; auto indent
 (require 'py-autopep8)
 (define-key python-mode-map (kbd "C-c F") 'py-autopep8)          ; バッファ全体のコード整形

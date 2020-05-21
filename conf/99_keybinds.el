@@ -15,4 +15,8 @@
 ;; (global-set-key (kbd "C-x C-z") 'some-command)
 
 ;;; rust
-(define-key rust-mode-map (kbd "C-c C-c") 'rust-run)
+(define-key rust-mode-map (kbd "C-c C-r") 'rust-run)
+(define-key rust-mode-map (kbd "C-c C-t") 'rust-test)
+
+;;; Magit
+(global-set-key (kbd "C-x g") 'magit-status)

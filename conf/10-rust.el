@@ -1,5 +1,7 @@
 ;;; rust-mode
 (require 'rust-mode)
+;; cargo
+;(add-hook 'rust-mode-hook 'cargo-minor-mode)
 ;; indentation
 (add-hook 'rust-mode-hook
           (lambda () (setq indent-tabs-mode nil)))

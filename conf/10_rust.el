@@ -18,4 +18,4 @@
 (setq-default rustic-format-trigger 'on-save)
 (setq rustic-lsp-server 'rust-analyzer)
 ;; Clippy
-(push 'rustic-clippy flycheck-checkers)
+; (push 'rustic-clippy flycheck-checkers)

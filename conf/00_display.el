@@ -1,10 +1,6 @@
 ;;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'spacemacs-dark t)
-; (require 'spacemacs-common)
-; (deftheme spacemacs-dark "Spacemacs theme, the dark versioin")
-; (create-spacemacs-theme 'dark 'spacemacs-dark)
-; (provide-theme 'spacemacs-dark)
 
 ;;; Highlight
 (global-hl-line-mode 1)
@@ -30,3 +26,12 @@
 (set-face-background `trailing-whitespace "#b14770")
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
+
+;;; show current directory
+(let ((ls (member 'mode-line-buffer-identification
+                  mode-line-format)))
+  (setcdr ls
+    (cons '(:eval (concat " ("
+            (abbreviate-file-name default-directory)
+            ")"))
+          (cdr ls))))

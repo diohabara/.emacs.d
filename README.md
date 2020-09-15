@@ -1,3 +1,6 @@
 # .emacs.d
 
-hacked
+- `conf`
+  - Configuration files
+- `init.el`
+  - Setting file

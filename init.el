@@ -94,7 +94,7 @@
  '(org-journal-dir "~/Dropbox/Org/journal" t)
  '(package-selected-packages
    (quote
-    (ob-rust ob-ipython material-theme dockerfile-mode docker protobuf-mode gocode rtags thingopt jedi-mode tuareg-mode revert-buffer multi-term bazel-mode rainbow-delimiters helm-config flycheck-pos-tip elscreen undohist undo-tree wgrep helm-c-moccur helm yaml-mode org-journal-list org-journal org-capture-pop-frame go-autocomplete go-eldoc go-mode xclip jedi flycheck-rust cargo py-autopep8 ccls google-c-style git-gutter git-gutter+ git-gutter-fringe undo-fu rustic rust-mode nasm-mode prettier-js company-tern xref-js2 js2-refactor js2-mode tide web-mode auto-complete-clang-async auto-complete-c-headers elpy zenburn-theme spacemacs-theme lsp-ui lsp-treemacs dap-mode posframe company-lsp yasnippet lsp-mode sbt-mode lsp-scala scala-mode cl-lib-highlight exec-path-from-shell tuareg wakatime-mode git-gutter-fringe+ flycheck neotree company avy-migemo swiper counsel ivy magit use-package init-loader ggtags auto-save-buffers-enhanced)))
+    (haskell-mode ob-rust ob-ipython material-theme dockerfile-mode docker protobuf-mode gocode rtags thingopt jedi-mode tuareg-mode revert-buffer multi-term bazel-mode rainbow-delimiters helm-config flycheck-pos-tip elscreen undohist undo-tree wgrep helm-c-moccur helm yaml-mode org-journal-list org-journal org-capture-pop-frame go-autocomplete go-eldoc go-mode xclip jedi flycheck-rust cargo py-autopep8 ccls google-c-style git-gutter git-gutter+ git-gutter-fringe undo-fu rustic rust-mode nasm-mode prettier-js company-tern xref-js2 js2-refactor js2-mode tide web-mode auto-complete-clang-async auto-complete-c-headers elpy zenburn-theme spacemacs-theme lsp-ui lsp-treemacs dap-mode posframe company-lsp yasnippet lsp-mode sbt-mode lsp-scala scala-mode cl-lib-highlight exec-path-from-shell tuareg wakatime-mode git-gutter-fringe+ flycheck neotree company avy-migemo swiper counsel ivy magit use-package init-loader ggtags auto-save-buffers-enhanced)))
  '(web-mode-enable-auto-quoting nil)
  '(web-mode-enable-current-column-highlight t)
  '(web-mode-enable-current-element-highlight t)
@@ -471,6 +471,11 @@
   (autoload 'tuareg-run-ocaml "tuareg" "Run an inferior OCaml process." t)
   (autoload 'ocamldebug "ocamldebug" "Run the OCaml debugger" t)
   )
+
+;;;;;;;;;;;;;;;;;;;;
+;; Haskell
+(use-package haskell-mode
+  :ensure t)
 
 ;;;;;;;;;;;;;;;;;;;;
 ;; Python

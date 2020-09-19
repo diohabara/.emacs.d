@@ -249,7 +249,7 @@
 ;;;;;;;;;;;;;;;;;;;;
 ;; sidebar
 (tool-bar-mode 0) ; hide toolbar
-(scroll-bar-mode 0) ; hide scrollbar
+;(scroll-bar-mode 0) ; hide scrollbar
 (toggle-truncate-lines 0) ; hide truncate line
 (line-number-mode t) ; line number
 (column-number-mode t) ; colunn number
@@ -300,10 +300,10 @@
                     :weight 'normal
                     :width 'normal)
 ;; Japanese
-(set-fontset-font
- nil 'japanese-jisx0208
- (font-spec :family "Noto Serif CJK JP"))
-(add-to-list 'face-font-rescale-alist '(".*Noto.*" . 1.2))
+
+
+
+
 
 ;;;;;;;;;;;;;;;;;;;;
 ;; ELScreen

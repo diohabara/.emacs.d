@@ -295,7 +295,7 @@
 ;; fonts
 ;; English
 (set-face-attribute 'default nil
-                    :family "Menlo"
+                    :family "JetBrains Mono"
                     :height 130
                     :weight 'normal
                     :width 'normal)
@@ -797,14 +797,20 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;
 ;;; Keybinds
-(global-set-key (kbd "C-h") 'delete-backward-char) ; Delete a space
-(global-set-key (kbd "M-h") 'backward-kill-word) ; Delete a word
-(global-set-key (kbd "C-c l") 'toggle-truncate-lines) ; Toggle Truncate mode
-(global-set-key (kbd "C-<tab>") 'other-window) ; Change windows
-(global-set-key (kbd "C-x ?") 'help-command) ; Help
-(global-set-key (kbd "C-r") 'undo-fu-only-redo) ; Redo
 (defalias 'exit 'save-buffers-kill-emacs) ; exit alias
+(global-set-key (kbd "C-<tab>") 'other-window) ; Change windows
+(global-set-key (kbd "C-c l") 'toggle-truncate-lines) ; Toggle Truncate mode
+(global-set-key (kbd "C-h") 'delete-backward-char) ; Delete a space
+(global-set-key (kbd "C-r") 'undo-fu-only-redo) ; Redo
+(global-set-key (kbd "C-x ?") 'help-command) ; Help
 (global-set-key (kbd "C-x C-q") 'save-buffers-kill-emacs) ; Stop unintenionally quitting Emacs
+(global-set-key (kbd "M-h") 'backward-kill-word) ; Delete a word
+(when (eq system-type 'darwin)
+  (setq mac-option-modifier 'meta)
+  (setq mac-right-option-modifier 'meta)
+  )
+
+
 
 ;;;;;;;;;;;;;;;;;;;;
 ;; eshell keybinds

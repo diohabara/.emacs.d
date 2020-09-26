@@ -1,6 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Unset keys
-(global-unset-key (kbd "C-h"))
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-x C-z"))
 
@@ -46,7 +45,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ccls-executable "/usr/local/bin/ccls")
- '(ccls-sem-highlight-method (quote font-lock))
+ '(ccls-sem-highlight-method 'font-lock)
  '(ccls-use-default-rainbow-sem-highlight nil t)
  '(company-echo-delay 0 t)
  '(company-idle-delay 0)
@@ -56,45 +55,43 @@
  '(company-lsp-enable-snippet t)
  '(company-minimum-prefix-length 2)
  '(company-selection-wrap-around t)
- '(company-transformers (quote (company-sort-by-backend-importance)))
+ '(company-transformers '(company-sort-by-backend-importance))
  '(completion-ignore-case t t)
  '(create-lockfiles nil)
  '(custom-safe-themes
-   (quote
-    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
- '(lsp-document-sync-method (quote incremental))
+   '("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default))
+ '(lsp-document-sync-method 'incremental)
  '(lsp-enable-indentation nil)
  '(lsp-enable-snippet t)
  '(lsp-inhibit-message t t)
  '(lsp-message-project-root-warning t t)
  '(lsp-prefer-flymake nil t)
- '(lsp-ui-doc-enable t)
- '(lsp-ui-doc-header t)
- '(lsp-ui-doc-include-signature t)
- '(lsp-ui-doc-max-height 20)
- '(lsp-ui-doc-max-width 60)
- '(lsp-ui-doc-position (quote top))
- '(lsp-ui-doc-use-childframe t)
- '(lsp-ui-doc-use-webkit nil)
+ '(lsp-ui-doc-enable t t)
+ '(lsp-ui-doc-header t t)
+ '(lsp-ui-doc-include-signature t t)
+ '(lsp-ui-doc-max-height 20 t)
+ '(lsp-ui-doc-max-width 60 t)
+ '(lsp-ui-doc-position 'top t)
+ '(lsp-ui-doc-use-childframe t t)
+ '(lsp-ui-doc-use-webkit nil t)
  '(lsp-ui-flycheck-enable t t)
- '(lsp-ui-imenu-enable nil)
- '(lsp-ui-imenu-kind-position (quote top))
- '(lsp-ui-peek-always-show t)
- '(lsp-ui-peek-enable t)
- '(lsp-ui-peek-fontify (quote always))
- '(lsp-ui-peek-list-width 30)
- '(lsp-ui-peek-peek-height 30)
- '(lsp-ui-sideline-enable t)
- '(lsp-ui-sideline-ignore-duplicate t)
- '(lsp-ui-sideline-show-code-actions t)
- '(lsp-ui-sideline-show-diagnostics t)
- '(lsp-ui-sideline-show-hover t)
- '(lsp-ui-sideline-show-symbol t)
+ '(lsp-ui-imenu-enable nil t)
+ '(lsp-ui-imenu-kind-position 'top t)
+ '(lsp-ui-peek-always-show t t)
+ '(lsp-ui-peek-enable t t)
+ '(lsp-ui-peek-fontify 'always t)
+ '(lsp-ui-peek-list-width 30 t)
+ '(lsp-ui-peek-peek-height 30 t)
+ '(lsp-ui-sideline-enable t t)
+ '(lsp-ui-sideline-ignore-duplicate t t)
+ '(lsp-ui-sideline-show-code-actions t t)
+ '(lsp-ui-sideline-show-diagnostics t t)
+ '(lsp-ui-sideline-show-hover t t)
+ '(lsp-ui-sideline-show-symbol t t)
  '(org-journal-date-format "%A, %d %B %Y" t)
  '(org-journal-dir "~/Dropbox/Org/journal" t)
  '(package-selected-packages
-   (quote
-    (haskell-mode ob-rust ob-ipython material-theme dockerfile-mode docker protobuf-mode gocode rtags thingopt jedi-mode tuareg-mode revert-buffer multi-term bazel-mode rainbow-delimiters helm-config flycheck-pos-tip elscreen undohist undo-tree wgrep helm-c-moccur helm yaml-mode org-journal-list org-journal org-capture-pop-frame go-autocomplete go-eldoc go-mode xclip jedi flycheck-rust cargo py-autopep8 ccls google-c-style git-gutter git-gutter+ git-gutter-fringe undo-fu rustic rust-mode nasm-mode prettier-js company-tern xref-js2 js2-refactor js2-mode tide web-mode auto-complete-clang-async auto-complete-c-headers elpy zenburn-theme spacemacs-theme lsp-ui lsp-treemacs dap-mode posframe company-lsp yasnippet lsp-mode sbt-mode lsp-scala scala-mode cl-lib-highlight exec-path-from-shell tuareg wakatime-mode git-gutter-fringe+ flycheck neotree company avy-migemo swiper counsel ivy magit use-package init-loader ggtags auto-save-buffers-enhanced)))
+   '(doom-themes doom doom-modeline haskell-mode ob-rust ob-ipython material-theme dockerfile-mode docker protobuf-mode gocode rtags thingopt jedi-mode tuareg-mode revert-buffer multi-term bazel-mode rainbow-delimiters helm-config flycheck-pos-tip elscreen undohist undo-tree wgrep helm-c-moccur helm yaml-mode org-journal-list org-journal org-capture-pop-frame go-autocomplete go-eldoc go-mode xclip jedi flycheck-rust cargo py-autopep8 ccls google-c-style git-gutter git-gutter+ git-gutter-fringe undo-fu rustic rust-mode nasm-mode prettier-js company-tern xref-js2 js2-refactor js2-mode tide web-mode auto-complete-clang-async auto-complete-c-headers elpy zenburn-theme spacemacs-theme lsp-ui lsp-treemacs dap-mode posframe company-lsp yasnippet lsp-mode sbt-mode lsp-scala scala-mode cl-lib-highlight exec-path-from-shell tuareg wakatime-mode git-gutter-fringe+ flycheck neotree company avy-migemo swiper counsel ivy magit use-package init-loader ggtags auto-save-buffers-enhanced))
  '(web-mode-enable-auto-quoting nil)
  '(web-mode-enable-current-column-highlight t)
  '(web-mode-enable-current-element-highlight t)
@@ -283,11 +280,30 @@
 ;;;;;;;;;;;;;;;;;;;;
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(use-package material-theme
+(use-package doom
+  :ensure t)
+(use-package doom-modeline
   :ensure t
+  :init (doom-modeline-mode 1))
+(use-package doom-themes
   :config
-  (load-theme 'material t)
-  )
+  ;; Global settings (defaults)
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+  (load-theme 'doom-one t)
+
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
+
+  ;; Enable custom neotree theme (all-the-icons must be installed!)
+  (doom-themes-neotree-config)
+  ;; or for treemacs users
+  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+  (doom-themes-treemacs-config)
+
+  ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))
+
 ;; set background color
 (set-face-background 'region "darkgreen")
 
@@ -800,7 +816,6 @@
 (defalias 'exit 'save-buffers-kill-emacs) ; exit alias
 (global-set-key (kbd "C-<tab>") 'other-window) ; Change windows
 (global-set-key (kbd "C-c l") 'toggle-truncate-lines) ; Toggle Truncate mode
-(global-set-key (kbd "C-h") 'delete-backward-char) ; Delete a space
 (global-set-key (kbd "C-r") 'undo-fu-only-redo) ; Redo
 (global-set-key (kbd "C-x ?") 'help-command) ; Help
 (global-set-key (kbd "C-x C-q") 'save-buffers-kill-emacs) ; Stop unintenionally quitting Emacs

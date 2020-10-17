@@ -525,9 +525,10 @@
 ;; Common Lisp
 (use-package slime
   :ensure t
-  :init
-  (setq inferior-lisp-program "sbcl")
+  :config
+  (setq inferior-lisp-program "/usr/local/bin/sbcl")
   )
+(setq debug-on-error t)
 
 ;;;;;;;;;;;;;;;;;;;;
 ;; Rust
